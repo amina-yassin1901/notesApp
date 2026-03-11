@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import { connect } from "react-redux";
 import { addNote } from "../../redux/actions";
+import styles from "./styles.module.css";
 
 function NoteForm({ addNote }) {
   const { register, handleSubmit } = useForm();
@@ -11,13 +12,20 @@ function NoteForm({ addNote }) {
     });
   };
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <input type="text" {...register("title", { required: true })} />
+    <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
+      <input
+        className={styles.input}
+        type="text"
+        {...register("title", { required: true })}
+      />
       <textarea
+        className={styles.textarea}
         name="text"
         {...register("text", { required: true })}
       ></textarea>
-      <button type="submit">Add Note</button>
+      <button className={styles.button} type="submit">
+        Add Note
+      </button>
     </form>
   );
 }
