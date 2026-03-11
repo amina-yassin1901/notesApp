@@ -1,5 +1,9 @@
 import styles from "./styles.module.css";
 function Header() {
-  return <h1 className={styles.header}>My Notes App</h1>;
+  return (
+    <header className={styles.container}>
+      <h1 className={styles.header}>My Notes App</h1>
+    </header>
+  );
 }
 export default Header;
