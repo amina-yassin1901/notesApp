@@ -1,0 +1,43 @@
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 16px;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.content {
+  flex: 1;
+}
+
+.title {
+  margin: 0 0 6px 0;
+  font-size: 18px;
+}
+
+.text {
+  margin: 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.button {
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: #ff4d4f;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+
+  transition: background 0.2s;
+}
+
+.button:hover {
+  background: #d9363e;
+}
