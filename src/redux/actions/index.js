@@ -10,3 +10,7 @@ export const deleteNote = (id) => {
     payload: id,
   };
 };
+export const updateNote = (note) => ({
+  type: "UPDATE_NOTE",
+  payload: note,
+});

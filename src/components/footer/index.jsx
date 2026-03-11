@@ -2,7 +2,7 @@ import styles from "./styles.module.css";
 
 function Footer() {
   return (
-    <footer>
+    <footer className={styles.container}>
       <p className={styles.footer}>
         &copy; 2026 My Notes App. All rights reserved.
       </p>
